@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jt8-lW-clg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Batdau-->
+        <scene sceneID="FCo-5L-Gaf">
+            <objects>
+                <viewController id="pya-yk-gRV" customClass="batdau" customModule="FlappyBird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vdQ-0q-ArB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaq-mk-Xjk">
+                                <rect key="frame" x="154" y="168" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="chuyenmanhinh:" destination="pya-yk-gRV" eventType="touchUpInside" id="M8C-Fd-Z0B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaF-HJ-efI">
+                                <rect key="frame" x="154" y="274" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="medium:" destination="pya-yk-gRV" eventType="touchUpInside" id="IAs-w8-POF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbX-eJ-b3O">
+                                <rect key="frame" x="154" y="371" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="High"/>
+                                <connections>
+                                    <action selector="hight:" destination="pya-yk-gRV" eventType="touchUpInside" id="jbK-BB-s68"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="V1J-Qr-Ofs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="79a-JZ-7nk"/>
+                    <connections>
+                        <outlet property="view" destination="vdQ-0q-ArB" id="W6h-lK-sH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jo9-MM-tmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="121.875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="play" id="BYZ-38-t0r" customClass="ViewController" customModule="FlappyBird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-duoi.png" translatesAutoresizingMaskIntoConstraints="NO" id="OjZ-Sg-IFB">
+                                <rect key="frame" x="162" y="550" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-duoi.png" translatesAutoresizingMaskIntoConstraints="NO" id="h61-qb-C5o">
+                                <rect key="frame" x="285" y="550" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-ue-1Z1">
+                                <rect key="frame" x="10" y="370" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="batdau:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAE-KT-2Tk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4g-AT-3cO">
+                                <rect key="frame" x="128" y="370" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-tren.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKn-V6-Aih">
+                                <rect key="frame" x="20" y="-506" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-tren.png" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Hr-HvL">
+                                <rect key="frame" x="162" y="-520" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-tren.png" translatesAutoresizingMaskIntoConstraints="NO" id="KWq-g4-xYa">
+                                <rect key="frame" x="285" y="-506" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ong-duoi.png" translatesAutoresizingMaskIntoConstraints="NO" id="6BV-Ce-zh2">
+                                <rect key="frame" x="20" y="526" width="90" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-minecraft-flappy-bird-pixel-art-xbox-360-pixel-5aceb8bccd1564.1373451515234971488401.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-gn-RmP">
+                                <rect key="frame" x="35" y="428" width="75" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-QS-9le">
+                                <rect key="frame" x="128" y="439" width="100" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-ER-AXK">
+                                <rect key="frame" x="247" y="370" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="choilai:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rqn-Qf-7gZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="a6d-7M-5fG" appends="YES" id="78z-pe-aVP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="batdau" destination="hQa-ue-1Z1" id="eVx-NL-o4o"/>
+                        <outlet property="btplay" destination="hQa-ue-1Z1" id="Lxu-WP-fEu"/>
+                        <outlet property="btreset" destination="jSg-ER-AXK" id="UcE-gW-hoe"/>
+                        <outlet property="conhim" destination="IeD-gn-RmP" id="H7d-0l-r9z"/>
+                        <outlet property="lblkq" destination="k4g-AT-3cO" id="L8l-vj-CxI"/>
+                        <outlet property="lbltraitim" destination="4Ok-QS-9le" id="Pyl-Zp-iHM"/>
+                        <outlet property="ongduoi1" destination="6BV-Ce-zh2" id="022-Xa-rPc"/>
+                        <outlet property="ongduoi2" destination="OjZ-Sg-IFB" id="KZY-Og-KcG"/>
+                        <outlet property="ongduoi3" destination="h61-qb-C5o" id="KiS-mh-eSR"/>
+                        <outlet property="ongtren1" destination="WKn-V6-Aih" id="5US-nD-5QP"/>
+                        <outlet property="ongtren2" destination="GP9-Hr-HvL" id="b1S-gR-ZsQ"/>
+                        <outlet property="ongtren3" destination="KWq-g4-xYa" id="jSe-Bd-g1z"/>
+                        <outlet property="viewui" destination="8bC-Xf-vdC" id="9F4-fW-lWp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="a6d-7M-5fG">
+                    <connections>
+                        <action selector="nhaylen:" destination="BYZ-38-t0r" id="0sH-bB-O3h"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="119.83695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1GI-jp-hl2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jt8-lW-clg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wK0-wm-ciO">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pya-yk-gRV" kind="relationship" relationship="rootViewController" id="pp7-OU-Xr2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbB-1S-8ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620.28985507246387" y="121.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kisspng-minecraft-flappy-bird-pixel-art-xbox-360-pixel-5aceb8bccd1564.1373451515234971488401.png" width="825" height="750"/>
+        <image name="ong-duoi.png" width="244" height="1499"/>
+        <image name="ong-tren.png" width="244" height="1499"/>
+    </resources>
+</document>
